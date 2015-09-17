@@ -1,0 +1,10 @@
+<h1>APP SIMPLE</h1>
+
+<p>Hola <%= @user.name %>,</p>
+
+<p>
+¡Bienvenido a esta aplicación! Por favor, haz click en el siguiente enlace para activar tu cuenta:
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>
