@@ -16,23 +16,19 @@ gem 'jquery-rails',				'4.0.3'
 gem 'turbolinks',				'2.3.0'
 gem 'jbuilder', 				'2.2.3'
 gem 'sdoc', 					'0.4.0', group: :doc
-gem 'sqlite3'
 gem 'puma',           '2.11.1'
-
-group :development, :test do
-  gem 'byebug'
-  gem 'sqlite3'
-end
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'sqlite3'
 end
 
 group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
+  gem 'byebug'
 end
 
 group :production do
